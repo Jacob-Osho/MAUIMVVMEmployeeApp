@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUISQLLiteApp.MainPage"
+             Title="MVVM Demo">
+
+    <VerticalStackLayout VerticalOptions="End">
+        <Label Text="Employees" HorizontalOptions="Center" TextColor="Red" Margin="10"/>
+        <Button x:Name="Employeebtn1" Text="Employee 1" Margin="10" Clicked="Employeebtn1_Clicked"/>
+        <Button x:Name="Employeebtn2" Text="Employee 2" Margin="10" Clicked="Employeebtn2_Clicked"/>
+        <Button x:Name="Employeebtn3" Text="Employee 3" Margin="10" Clicked="Employeebtn3_Clicked"/>
+    </VerticalStackLayout>
+
+</ContentPage>

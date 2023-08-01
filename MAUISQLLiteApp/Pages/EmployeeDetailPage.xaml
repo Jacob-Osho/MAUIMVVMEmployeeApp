@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUISQLLiteApp.Pages.EmployeeDetailPage"
+             Title="Employee Details"
+             xmlns:vm="clr-namespace:MAUISQLLiteApp.Models.VModels"
+             x:DataType="vm:EmployeeDetailVMTwo">
+    <TableView Intent="Data">
+        <TableRoot>
+            <TableSection Title="Basic Information">
+                <TextCell Text="Employe ID " Detail="{Binding Employee.EmpoyeeId}"/>
+                <TextCell Text="Employe Name"  Detail="{Binding Employee.Name}"/>
+                <EntryCell Label="Name" Text="{Binding Employee.Name}"/>
+                <TextCell Text="Employe Email"  Detail="{Binding Employee.EmailAdress}"/>
+                <SwitchCell Text="isPartTimer" On="{Binding Employee.IsPartTimer}"/>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+   
+</ContentPage>
